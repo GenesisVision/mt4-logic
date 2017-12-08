@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<configuration>
+	<server name="Server1" address="127.0.0.1/>
+	<server name="Server2" address="127.0.0.1/>
+</configuration>

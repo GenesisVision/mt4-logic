@@ -1,0 +1,29 @@
+package ProtoTypes;
+
+enum ActionType {
+	Open = 0;
+	Close = 1;
+}
+
+enum TradeSide {
+	Buy = 0;
+	Sell = 1;
+}
+
+message MT4TradeSignal {
+	required TradeSide Side = 1;
+	required ActionType ActionType = 2;
+	required int64 DateTime = 3;
+	required double Equity = 4;
+	required double Balance = 5;
+	required double Volume = 6;
+	required string Symbol = 7;
+	optional double StopLoss = 8 [default = 0];
+	optional double TakeProfit = 9 [default = 0];
+	required int32 Login = 10;
+	required string Server = 11;
+	required int32 OrderID = 12;
+	required string Comment = 13;
+	required double Profit = 14 [default = 0];
+	required double ProviderCommission = 15 [default = 0];
+}

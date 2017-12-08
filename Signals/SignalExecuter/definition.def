@@ -1,0 +1,19 @@
+LIBRARY SignalExecuter
+
+EXPORTS
+    MtSrvAbout             
+    MtSrvStartup               
+    MtSrvPluginCfgAdd
+    MtSrvPluginCfgSet
+    MtSrvPluginCfgGet
+    MtSrvPluginCfgNext
+    MtSrvPluginCfgDelete
+    MtSrvPluginCfgTotal            
+    MtSrvCleanup
+	MtSrvDealerConfirm
+	MtSrvDealerRequote
+	MtSrvDealerReset	
+	MtSrvTradesUpdate
+	MtSrvTradesAddExt
+    
+		

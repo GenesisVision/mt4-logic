@@ -1,0 +1,28 @@
+package ProtoTypes;
+
+message Signal {
+	/// Type of signal
+	required SignalType Type = 1;
+
+	/// Signal content
+	optional bytes Content = 2;
+
+	/// Source of signal
+	required string Source = 3;
+
+	/// Some description
+	optional string Description = 4;
+}
+enum SignalType {
+	/// Some trade was happened.
+	TradeSignal = 0;
+
+	/// "Connect me" message
+	ConnectSignal = 1;
+
+	/// Orders status response
+	SignalOrdersStatus = 2;
+
+	/// Other signal type will here
+}
+

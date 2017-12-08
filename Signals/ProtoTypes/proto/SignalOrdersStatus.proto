@@ -1,0 +1,26 @@
+package ProtoTypes;
+
+import "Signal.proto";
+import "SignalMT4Trade.proto";
+message OrderStatus
+{
+	required int32 OrderId = 1;
+	required TradeSide Side = 2;
+	required int64 DateTime = 4;
+	required double Volume = 7;
+	required string Symbol = 8;
+	optional double StopLoss = 9 [default = 0];
+	optional double TakeProfit = 10 [default = 0];
+	required string Comment = 11;
+	/// Other necessary fields
+}
+ 
+message AccountOrdersStatus{
+	required int32 login = 1;
+	repeated OrderStatus orderStatus = 2;
+}
+ 
+message OrdersStatusResponse {
+	/// Collection of orders
+	repeated AccountOrdersStatus ordersStatus = 1;
+}

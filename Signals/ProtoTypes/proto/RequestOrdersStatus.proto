@@ -1,0 +1,6 @@
+package ProtoTypes;
+
+message OrdersStatusRequest {
+	/// Requested accounts. If empty - request all opened orders
+	repeated int32 logins = 1;
+}

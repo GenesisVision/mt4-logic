@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\proto">
+      <UniqueIdentifier>{5345dd92-2427-4ebb-a48b-10dc0d88f3de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proto">
+      <UniqueIdentifier>{72a09e71-b1b7-4be7-a9a1-5066b1f63828}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ZeroMqDealer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcurrentQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolStructs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\Request.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\RequestExecution.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\RequestOrdersStatus.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\Signal.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\SignalMT4Trade.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="proto\SignalOrdersStatus.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConcurrentQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZeroMqDealer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\Request.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\RequestExecution.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\RequestOrdersStatus.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\Signal.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\SignalMT4Trade.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="proto\SignalOrdersStatus.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="bin\libzmq.dll" />
+  </ItemGroup>
+</Project>

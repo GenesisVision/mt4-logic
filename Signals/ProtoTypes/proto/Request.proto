@@ -1,0 +1,25 @@
+package ProtoTypes;
+
+message Request{
+	/// Type of request	
+	required RequestType requestType = 1;
+ 
+    required string destination = 2;
+
+	/// Request content
+	optional bytes Content = 3;
+}
+
+enum RequestType{
+	///Orders status request
+	OrderStatusRequestType = 1;
+ 
+    ExecutionRequestType = 2;
+
+    /// Connect response
+	Connected = 3;
+
+	/// Other request type may be here
+
+}
+ 

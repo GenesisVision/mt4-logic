@@ -1,0 +1,24 @@
+package ProtoTypes;
+
+                      
+import "SignalMT4Trade.proto";
+import "Signal.proto";   
+
+message ExecutionOrder {
+	required int32 Login = 1;
+	required ActionType ActionType = 2;
+	required TradeSide Side = 3;
+	required double Volume = 4;
+	required string Symbol = 5;
+	optional int32 OrderID = 6;
+	optional double Commission = 7;
+}
+message ExecutionSignal {                        
+	/// Comment about signal initiator (server_login_orderId)
+	required string Comment = 1;
+	/// Signal destination (server name)
+	required string Destination = 2;
+	/// Orders on execution
+	repeated ExecutionOrder Orders = 3;
+}
+

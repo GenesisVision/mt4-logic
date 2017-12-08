@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenOrderSignal.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="mt4part\Processor.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseExecutionSignal.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseOrderSignal.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Sync.h">
+      <Filter>headers\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Thread.h">
+      <Filter>headers\common</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenOrderSignal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mt4part\Processor.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseExecutionSignal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseOrderSignal.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>definitions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="definition.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{2f568daa-0030-470d-a684-967b2a86da9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="definitions">
+      <UniqueIdentifier>{aa71ecbb-91e2-4d57-acd9-3869f707f96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\common">
+      <UniqueIdentifier>{b7220dd4-ab79-400f-8cc5-66a381fc66cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\mt4">
+      <UniqueIdentifier>{1b87d4f7-9aae-4116-86f9-de25e94aa47f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
